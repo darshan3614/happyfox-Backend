@@ -1,0 +1,47 @@
+{
+  "rule-1": {
+    "id": "rule-1",
+    "conditions": [
+      {
+        "field": "sender",
+        "predicate": "contains",
+        "value": "reddit"
+      }
+    ],
+    "match": "all",
+    "actions": [
+      "mark-read"
+    ]
+  },
+  "rule-2": {
+    "conditions": [
+      {
+        "field": "timestamp",
+        "predicate": "less_than:days",
+        "value": 1
+      },
+      {
+        "field": "subject",
+        "predicate": "contains",
+        "value": "zomato"
+      }
+    ],
+    "match": "any",
+    "actions": [
+      "mark-read"
+    ]
+  },
+  "rule-3": {
+    "conditions": [
+      {
+        "field": "sender",
+        "predicate": "contains",
+        "value": "reddit"
+      }
+    ],
+    "match": "all",
+    "actions": [
+      "move-to:test2"
+    ]
+}
+}

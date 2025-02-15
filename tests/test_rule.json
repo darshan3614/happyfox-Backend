@@ -1,0 +1,24 @@
+{
+    "rule-error-type": {
+        "conditions": [
+            {
+                "field": "timestamp",
+                "predicate": "less_than:days",
+                "value": "0"
+            }
+        ],
+        "match": "all",
+        "actions": []
+    },
+    "rule-success": {
+        "conditions": [
+            {
+                "field": "sender",
+                "predicate": "contains",
+                "value": ""
+            }
+        ],
+        "match": "any",
+        "actions": []
+    }
+}
