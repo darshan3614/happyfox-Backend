@@ -84,17 +84,6 @@ Setup
    }
    ```
 
-Running the Application
-Fetch and Store Emails
-```bash
-python gmail/fetch_emails.py
-```
-
-Process Emails Based on Rules
-```bash
-python checker/processor.py
-```
-
 Run the Main Script
 ```bash
 python main.py
