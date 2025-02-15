@@ -104,7 +104,7 @@ Rules are stored in JSON format. Example:
         {
         "field": "from",
         "predicate": "contains",
-        "value": example@domain.com
+        "value": "example@domain.com"
         }
     ],
     "match": "any",
