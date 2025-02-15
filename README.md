@@ -55,8 +55,8 @@ Prerequisites
 Setup
 1. Clone the repository:
    ```
-   git clone https://github.com/darshan3614/backend-assignment.git
-   cd backend-assignment
+   git clone https://github.com/darshan3614/happyfox-Backend.git
+   cd happyfox-Backend
    ```
 2. Create and activate a virtual environment:
    ```
@@ -102,11 +102,14 @@ Rules are stored in JSON format. Example:
 {
     "rules": [
         {
-            "field": "From",
-            "predicate": "contains",
-            "value": "example@domain.com",
-            "action": "mark_as_read"
+        "field": "from",
+        "predicate": "contains",
+        "value": example@domain.com
         }
+    ],
+    "match": "any",
+    "actions": [
+      "mark-read"
     ]
 }
 ```
