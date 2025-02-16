@@ -6,11 +6,21 @@
         "field": "sender",
         "predicate": "contains",
         "value": "reddit"
+      },
+      {
+        "field": "subject",
+        "predicate": "contains",
+        "value": "ola"
+      },
+      {
+        "field": "timestamp",
+        "predicate": "less_than:days",
+        "value": 2
       }
     ],
     "match": "all",
     "actions": [
-      "mark-read"
+      "mark-read","move-to:test2"
     ]
   },
   "rule-2": {
@@ -28,7 +38,7 @@
     ],
     "match": "any",
     "actions": [
-      "mark-read"
+      "move-to:test3"
     ]
   },
   "rule-3": {
@@ -36,12 +46,12 @@
       {
         "field": "sender",
         "predicate": "contains",
-        "value": "reddit"
+        "value": "security alert"
       }
     ],
     "match": "all",
     "actions": [
-      "move-to:test2"
+      "move-to:test4"
     ]
 }
 }
