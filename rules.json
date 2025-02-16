@@ -5,12 +5,12 @@
       {
         "field": "sender",
         "predicate": "contains",
-        "value": "reddit"
+        "value": "Google"
       },
       {
         "field": "subject",
         "predicate": "contains",
-        "value": "ola"
+        "value": "Google Verification"
       },
       {
         "field": "timestamp",
@@ -20,7 +20,7 @@
     ],
     "match": "all",
     "actions": [
-      "mark-read","move-to:test2"
+      "mark-read","move-to:test3"
     ]
   },
   "rule-2": {
@@ -46,7 +46,7 @@
       {
         "field": "sender",
         "predicate": "contains",
-        "value": "security alert"
+        "value": "Google"
       }
     ],
     "match": "all",
